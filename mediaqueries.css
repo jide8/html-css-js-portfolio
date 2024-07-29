@@ -8,6 +8,7 @@
     }
 }
 
+/* Medium devices (laptops, tablets) */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -16,84 +17,120 @@
         display: flex;
     }
     #experience, 
-    .experience-details-container{
+    .experience-details-container {
         margin-top: 2rem;
     }
     #profile,
-    .section-container{
+    .section-container {
         display: block;
     }
-    .arrow{
+    .arrow {
         display: none;
     }
     section,
-    .section-container{
+    .section-container {
         height: fit-content;
     }
-    section{
+    section {
         margin: 0 5%;
     }
-    .section__pic-container{
-        width: 275px;
-        height: 275px;
+    .section__pic-container {
+        width: 250px;
+        height: 250px;
         margin: 0 auto 2rem;
     }
-    .about-containers{
+    .about-containers {
         margin-top: 0;
     }
 }
 
-@media screen and (max-width: 600px) {
-    #contact,
-    footer{
-        height: 40vh;
+@media (max-width: 600px) {
+    nav {
+        height: auto; /* Adjust navigation height for smaller screens */
     }
-    #profile{
-        height: 83vh;
-        margin-bottom: 0;
+
+    .nav-links {
+        font-size: 1.2rem; /* Smaller font size for nav links */
     }
-    article{
-        font-size: 1rem;
+
+    .section-container {
+        margin: 0 1rem; /* Reduce margin for small screens */
+        flex-direction: column; /* Stack items vertically */
     }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
+
+    .section__pic-container {
+        height: 300px; /* Adjust image size for smaller screens */
+        width: 300px;
     }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-        flex-wrap: wrap;
+
+    .about-pic {
+        height: 300px; /* Adjust image size for smaller screens */
+        width: 200px;
     }
-    .contact-info-container{
-        margin: 0;
+
+    .details-container {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Adjust height to content */
     }
-    .contact-info-container p,
-    .nav-links li a{
-        font-size: 1rem;
+
+    .about-containers {
+        flex-direction: column; /* Stack about section items vertically */
     }
-    .experience-sub-title{
-        font-size: 1.25rem;
+
+    .btn {
+        width: 6rem; /* Smaller button width for mobile */
     }
-    .logo {
-        font-size: 1.5rem;
+
+    .project-img, .project-img2 {
+        height: 150px; /* Adjust project image height for smaller screens */
     }
-    .nav-links{
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .section__pic-container{
-        width: auto;
-        height: 46vw;
-        justify-content: center;
-    }
-    .section__text__p2{
-        font-size: 1.25rem;
-    }
-    .title{
-        font-size: 2rem;
-    }
-    .text-container{
-        text-align: justify;
+
+    .contact-info-upper-container {
+        flex-direction: column; /* Stack contact info items vertically */
     }
 }
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .nav-links {
+        font-size: 1.4rem; /* Adjust font size for tablets */
+    }
+
+    .section-container {
+        margin: 0 2rem; /* Medium margin for tablets */
+    }
+
+    .section__pic-container {
+        height: 350px; /* Adjust image size for tablets */
+        width: 350px;
+    }
+
+    .about-pic {
+        height: 350px; /* Adjust image size for tablets */
+        width: 250px;
+    }
+
+    .details-container {
+        width: 100%; /* Full width for tablets */
+        height: auto; /* Adjust height to content */
+    }
+
+    .about-containers {
+        flex-direction: row; /* Arrange about section items side by side */
+    }
+
+    .btn {
+        width: 7rem; /* Medium button width for tablets */
+    }
+
+    .project-img, .project-img2 {
+        height: 180px; /* Adjust project image height for tablets */
+    }
+
+    .contact-info-upper-container {
+        flex-direction: row; /* Arrange contact info items horizontally */
+    }
+}
+
+
+
